@@ -1,0 +1,197 @@
+:root {
+  --background_blue_colour: rgb(58, 122, 254);
+  --hover_background_blue_colour: rgba(58, 122, 254, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: overlay;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #89879f;
+  text-align: left;
+  background-color: #ebeef6;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #3d4465;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav_l {
+  width: 17vw;
+  height: 6vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(36, 54, 92);
+  mix-blend-mode: multiply;
+}
+.expand {
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+}
+.nav_l img {
+  width: 40%;
+  border-radius: 50%;
+}
+.expand img {
+  cursor: pointer;
+  height: 150%;
+  margin-left: 3vw;
+}
+
+.sidebar {
+  position: fixed;
+  top: 6vw;
+  left: 0;
+  width: 17vw;
+  height: 100vh;
+  background-color: rgb(36, 54, 92);
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vw;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 0.7vw 3vw;
+  cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+@keyframes open_sidebar {
+  from {
+    left: -60vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
+@keyframes close_sidebar {
+  from {
+    left: 0vw;
+  }
+  to {
+    left: -60vw;
+  }
+}
+.open_sidebar {
+  animation: open_sidebar 0.4s ease-in-out;
+}
+.close_sidebar {
+  animation: close_sidebar 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 60vw;
+    padding-top: 5vw;
+    display: none;
+  }
+  .tab {
+    padding: 2vw 7vw;
+  }
+  .main {
+    width: 90vw !important;
+    margin-left: 5vw !important;
+    margin-top: 5vw !important;
+    overflow-x: scroll;
+  }
+  .counters_inside {
+    width: 100% !important;
+    margin-top: 3vw !important;
+    padding: 5vw !important;
+  }
+  .cou_logo {
+    height: 10vw !important;
+    width: 10vw !important ;
+  }
+  .head_common {
+    padding: 3vw 5% !important;
+  }
+  .limit_box {
+    padding: 4vw 5% !important;
+  }
+  .limit select {
+    width: 30% !important;
+  }
+  .search input {
+    padding: 1vw 2vw !important;
+    width: 40% !important;
+  }
+  .common_div {
+    padding: 0 5% !important;
+    overflow-x: scroll;
+  }
+  td img {
+    width: 7vw !important;
+  }
+  th,
+  td {
+    padding: 3vw !important;
+  }
+  .below_table {
+    padding: 2vw 5% !important;
+  }
+  .status,
+  .view {
+    padding: 0.6vw 1vw !important;
+  }
+  .input_referral_code {
+    margin-bottom: 4vw !important;
+    padding: 1vw 5% 5vw 5% !important;
+  }
+  .input_referral_code input {
+    padding: 1.5vw 3% !important;
+  }
+  .submit_team_members {
+    padding: 1vw 3vw !important;
+    margin-top: 3vw !important;
+  }
+  .gene_inner {
+    padding: 1.3vw 3% !important;
+  }
+  .change_pass_btn {
+    margin-top: 5vw !important;
+    margin-bottom: 7vw !important;
+  }
+}

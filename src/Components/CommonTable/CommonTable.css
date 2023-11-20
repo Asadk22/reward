@@ -1,0 +1,111 @@
+.common {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.head_common {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 1.2rem;
+  padding: 1vw 3%;
+  font-weight: 300;
+}
+
+.limit_box {
+  padding: 2vw 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.limit {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.limit select {
+  margin: 0 2%;
+  width: 14%;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  outline: none;
+  padding: 0.5vw;
+  border-radius: 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+.search input {
+  border-radius: 5px;
+  width: 30%;
+  padding: 0.5vw;
+  margin-left: 2%;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  outline: none;
+}
+
+.below_table {
+  padding: 1vw 3%;
+  padding-bottom: 3vw;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+}
+
+.hover_page_btn:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.page_btn {
+  border: 0;
+  padding: 0.5vw 1vw;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0 0.5vw;
+}
+
+.common_div {
+  width: 100%;
+  padding: 0 3%;
+}
+
+.input_referral_code {
+  margin-bottom: 1vw;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1vw 3% 2vw 3%;
+}
+.input_referral_code_head {
+  color: black;
+}
+.input_referral_code input {
+  width: 100%;
+  padding: 0.7vw 1%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 0.3vw;
+}
+
+.submit_team_members:hover {
+  background-color: var(--hover_background_blue_colour);
+}
+.submit_team_members {
+  background-color: var(--background_blue_colour);
+  color: white;
+  width: fit-content;
+  padding: 0.5vw 1vw;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1vw;
+}

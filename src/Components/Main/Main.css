@@ -1,0 +1,13 @@
+.main {
+  width: 79vw;
+  margin-left: 19vw;
+  margin-top: 2vw;
+}
+
+.footer {
+  margin: 4rem 0 2rem 0;
+  width: 100%;
+  text-align: center;
+  /* position: static; */
+  bottom: 0;
+}

@@ -1,0 +1,41 @@
+.dashboard {
+  width: 100%;
+}
+
+.counters {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+
+.counters_inside {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  padding: 2vw;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 1vw;
+}
+
+.cou_head {
+  text-transform: uppercase;
+}
+
+.cou_logo {
+  height: 4vw;
+  width: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+.cou_con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5%;
+}
