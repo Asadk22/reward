@@ -31,6 +31,13 @@ function RewardModal({
     setError("");
   };
   const handleSubmitPoints = async (multiple) => {
+    if (
+      Number(show?.coins) + Number(adminPoints) * multiple < 0 &&
+      multiple === -1
+    ) {
+      setError("Cant subtract coins");
+      return console.log("error less then 0");
+    }
     console.log(show?.coins, multiple, Number(adminPoints));
     let payload = {
       id: show?.userId,
@@ -47,7 +54,9 @@ function RewardModal({
       set_data("");
       set_data("Users List");
       setShow(false);
+      setError("");
     } catch (error) {
+      setError("");
       console.log(error);
     }
   };

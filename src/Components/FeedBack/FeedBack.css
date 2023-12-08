@@ -14,9 +14,12 @@ td img {
 }
 
 .status {
-    padding: 0.2vw 0.5vw;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
     background-color: #10ca93;
-    width: fit-content;
     color: white;
     border-radius: 5px;
     font-size: 0.6rem;

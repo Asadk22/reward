@@ -27,7 +27,9 @@ const Feedback = ({ data }) => {
                   </div>
                 </td>
                 <td>
-                  <div className="status">{userData?.ratting}</div>
+                  <div className="status">
+                    {userData?.ratting === 0 ? "-" : userData?.ratting}
+                  </div>
                 </td>
                 <td>
                   <div className="column">
