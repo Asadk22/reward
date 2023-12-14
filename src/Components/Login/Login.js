@@ -63,7 +63,7 @@ export default function Login({ setAuthRoute }) {
               style={{
                 display: "flex",
                 alignItems: "center",
-                background: "#E7F0FE",
+                background: "#fff",
                 border: "1px solid rgba(0, 0, 0, 0.2)",
                 borderRadius: "5px",
                 padding: "0 5px 0 5px",
